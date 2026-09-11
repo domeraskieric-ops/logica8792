@@ -5,13 +5,15 @@ int main (){
 
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int idade;
+    float valor, cotação;
 
-    printf("digite uma idade: ");
-    scanf("%d" , &idade);
+    printf("digite o valor em reais: ");
+    scanf("%f" , &valor);
 
-    printf("equivale a %d meses \n", (idade * 12));
-    printf("equivale a %d dias (aproximado) \n", (idade * 365) );
+    printf("digite o valor em dolar:");
+    scanf("%f", &cotação);
+
+    printf("valor em dolares: %.2f\n", valor / cotação); 
 
 
    return 0;
