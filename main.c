@@ -11,12 +11,8 @@ int main (){
    scanf("%d", &n);
 
 
-   if (n % 2 == 0){
-    printf("\nPar");
-   }else{
-    printf("\nImpar");
-   }
-     
+   printf("%s" , 2 == 0 ? "\npar":"\nimpar");
+      
    
    
 
