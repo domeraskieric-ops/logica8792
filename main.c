@@ -10,17 +10,8 @@ int main (){
    printf("digite um numero:");
    scanf("%d", &n);
 
-   //if(.....){
-   // code....
-   //}
 
-   if(n > 0){
-    printf("positivo\n");
-   }else if(n < 0){
-    printf("negativo\n");
-   }else{
-    printf("igual 0");
-   }
+   printf("%s", n > 0 ? "positivo" : ( n < 0 ? "negativo" : "zero"));
    
 
    return 0;
