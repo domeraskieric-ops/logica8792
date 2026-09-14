@@ -5,14 +5,19 @@ int main (){
 
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-   int n;
+   int idade;
 
    printf("digite um numero:");
-   scanf("%d", &n);
+   scanf("%d", &idade);
+
+    if (idade >= 18){
+        printf("voce é maior de idade!");
+    }else{
+        printf("voce é maior de idade!");
+    }
 
 
-   printf("%s" , 2 == 0 ? "\npar":"\nimpar");
-      
+    
    
    
 
