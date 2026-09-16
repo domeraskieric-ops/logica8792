@@ -5,31 +5,28 @@ int main (){
 
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int n1, n2, n3;
-    float freq;
-    float media;
+    int diaDaSemana;
 
-    printf("Digite a nota 1:");
-    scanf("%d", &n1);
+    printf("Digite um número de (1 a 7):");
+    scanf("%d", &diaDaSemana);
 
-    printf("\nDigite a nota 2: ");
-    scanf("%d", &n2);
-
-    printf("\nDigite a nota 3: ");
-    scanf("%d", &n3);
-
-    media = (n1 + n2 + n3) / 3;
-    
-    printf("Digite a frequencia (em numeros apenas): ");
-    scanf("%f", &freq);
-
-    if( media >= 7 && freq >= 75){
-        printf("\nAprovado com sucesso!");
+    if(diaDaSemana == 1){
+        printf("domingo!");
+    }else if(diaDaSemana == 2){
+        printf("segunda-feira");
+    }else if(diaDaSemana == 3){
+        printf("terça-feira");
+    }else if(diaDaSemana == 4){
+        printf("quarta-feira");
+    }else if(diaDaSemana == 5){
+        printf("quinta-feira");
+    }else if(diaDaSemana == 6){
+        printf("sexta-feira");
+    }else if(diaDaSemana == 7){
+        printf("sabado");
     }else{
-        printf("\nReprovado!");
+        printf("Valor invalido");
     }
-
-
 
     return 0;
 }
