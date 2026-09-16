@@ -14,7 +14,7 @@ int main (){
    printf("\nQual sua altura?");
    scanf("%f", &altura);
 
-   if((idade >= 18) && (altura >= 1.60)){
+   if((idade >= 18) || (altura >= 1.60)){
     printf("Voce pode brincar na roleta!");
    }else{
     printf("Voce nao pode brincar na roleta!");
