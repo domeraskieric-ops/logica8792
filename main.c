@@ -5,9 +5,9 @@ int main (){
 
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int n1, n2, n3
-    float media;
+    int n1, n2, n3;
     float freq;
+    float media;
 
     printf("Digite a nota 1:");
     scanf("%d", &n1);
@@ -18,12 +18,12 @@ int main (){
     printf("\nDigite a nota 3: ");
     scanf("%d", &n3);
 
-     = (n1 + n2 + n3) / 3;
+    media = (n1 + n2 + n3) / 3;
     
     printf("Digite a frequencia (em numeros apenas): ");
     scanf("%f", &freq);
 
-    if( >= 7 && freq >= 75){
+    if( media >= 7 && freq >= 75){
         printf("\nAprovado com sucesso!");
     }else{
         printf("\nReprovado!");
