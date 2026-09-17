@@ -5,16 +5,24 @@ int main (){
 
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    float a, b, c;
+   int opcao;
 
-    printf("digite os tres lados do triangulo?");
-    scanf("%f %f %f", &a, &b, &c);
+   printf("---- sistema de pedagio -----\n");
+   printf("1 - moto\n");
+   printf("2 - carro passeio\n");
+   scanf("%d", &opcao);
 
-    if(a + b > c && a + c > b && b + c > a){
-        printf("oa lados formam um triangulo!");
-    }else{
-        printf("os lados nao formam um triangulo!\n");
-    }
+   switch (opcao){
+    case 1 :
+        printf("moto | tarifa: R$ 5,00\n");
+        break;
+    case 2 :
+        printf("carro paseio R$ 10,00\n");  
+        break;
+    default:
+        printf("ERRO\n");
+        break;      
+   }
     
     
     return 0;
