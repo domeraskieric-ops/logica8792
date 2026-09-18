@@ -7,34 +7,34 @@ int main (){
 
    int m;
 
-    printf("digite um numero de 1 a 12 referente ao mes");
+    printf("digite um numero de 1 a 12 referente ao mes\n");
     scanf("%d", &m );
 
     switch (m)
     {
+    case 12:
     case 1:
     case 2:
-    case 3:
-        printf("verão");
+        printf("verão\n");
         break;
+    case 3:
     case 4:
     case 5:
-    case 6:
-        printf("inverno");
+        printf("Outono\n");
         break;
+    case 6:
     case 7:
     case 8:
-    case 9:
-        printf("outono");
+        printf("inverno\n");
         break;
-    case 10:    
+    case 9:    
+    case 10:
     case 11:
-    case 12:
-        printf("primavera");
+        printf("primavera\n");
         break;
 
     default:
-        printf("numero invalido");
+        printf("numero invalido\n");
         break;
     }
 
