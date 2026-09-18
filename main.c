@@ -5,33 +5,38 @@ int main (){
 
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-   int opcao;
+   int m;
 
-   printf("---- sistema de pedagio -----\n");
-   printf("1 - moto\n");
-   printf("2 - carro passeio\n");
-   printf("3 - caminhão\n");
-   printf("4 - onibus\n");
-   scanf("%d", &opcao);
+    printf("digite um numero de 1 a 12 referente ao mes");
+    scanf("%d", &m );
 
-   switch (opcao){
-    case 1 :
-        printf("Moto | tarifa: R$ 5,00\n");
+    switch (m)
+    {
+    case 1:
+    case 2:
+    case 3:
+        printf("verão");
         break;
-    case 2 :
-        printf("Carro paseio | R$ 10,00\n");  
+    case 4:
+    case 5:
+    case 6:
+        printf("inverno");
         break;
-    case 3 :
-        printf("Caminhão | R$ 25,00\n");
+    case 7:
+    case 8:
+    case 9:
+        printf("outono");
         break;
-    case 4 :
-        printf("Onibus | R$ 30,00\n");
-        break;   
+    case 10:    
+    case 11:
+    case 12:
+        printf("primavera");
+        break;
+
     default:
-        printf("ERRO\n");
-        break;      
-   }
-    
-    
+        printf("numero invalido");
+        break;
+    }
+
     return 0;
 }
