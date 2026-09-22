@@ -1,17 +1,17 @@
 #include<stdio.h>
 #include<locale.h>
 
-void dobrar(int *x){
-    *x = *x *2;
-}
+    void saudar(){
+        printf("Olá mundo!\n");
+        printf("Olá Eric");
+    }
 
+    
 int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int numero = 10; 
-    dobrar(&numero);
-    printf("Números depois na função %\n", numero);
-
+    saudar();
+    
     return 0;
 }
