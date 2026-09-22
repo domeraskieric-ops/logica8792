@@ -1,18 +1,25 @@
 #include<stdio.h>
 #include<locale.h>
 
-    void saudar(const char *nome){
-        printf("Olá %s!\n", nome);
+    int somar(int a, int b){
+        return a + b;
     }
-
-    
+    // void soma(){
+    //     int num1, num2;
+    //     printf("Digite um valor para num1:");
+    //     scanf("%d", &num1);
+    //     printf("Digite um valor para num2:");
+    //     scanf("%d", &num2);
+    //     int resultado = num1 + num2;
+    //     printf("O resultado da soma é %d\n", resultado1 );
+    //}
 int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    saudar("Eic");
-    saudar("domeraski");
-    saudar("Das Almas");
+    int resultado = somar(5, 3);
+
+    printf("A soma é: %d", resultado);
     
     return 0;
 }
