@@ -6,8 +6,9 @@ int main (){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
     int numeros[] = {10, 20, 30};
+    int lenght = sizeof(numeros) / sizeof(numeros[0]);
 
-    printf("%zu", sizeof(numeros));
+    printf("%d", lenght);
 
   
 
