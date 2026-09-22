@@ -1,16 +1,17 @@
 #include<stdio.h>
 #include<locale.h>
 
-int main (){
+void dobrar(int *x){
+    *x = *x *2;
+}
 
+int main (){
+    
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int x = 10;
-    int *p = &x;
-
-    printf("Valor de x: %d\n", x);
-    printf("Endreço de x: %p\n", &x);
-    printf("Valor via pornteiro: %d\n", *p);
+    int numero = 10; 
+    dobrar(&numero);
+    printf("Números depois na função %\n", numero);
 
     return 0;
 }
