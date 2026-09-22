@@ -11,7 +11,7 @@ int main (){
     numeros[1] = 20;
     numeros[2] = 30;
 
-    printf("%d", numeros[2]);
+    printf("%d\n%d\n%d", numeros[2], numeros[1], numeros[0]);
 
   
 
