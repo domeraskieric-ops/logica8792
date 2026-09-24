@@ -2,21 +2,17 @@
 #include<locale.h>
 #include<math.h>
 
-    void verificarEhParImpar(int n){
-        if(n % 2 ==0){
-            printf("%d é par!\n", n);
-        }else{
-            printf("%d é impar!\n", n);
+    void linha (int tamanho){
+        for(int i = 0; i < tamanho; i++){
+            printf("*");
         }
+        printf("\n");
     }
-
 int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    verificarEhParImpar(10);
-    verificarEhParImpar(7);
-    
+    linha(10000);
 
     return 0;
 }
