@@ -6,16 +6,12 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int EhparImpar;
+    int i = 10;
 
-    printf("numero");
-    scanf("%d", &EhparImpar);
-
-    if (EhparImpar % 2 == 0){
-        printf("numero par!\n");
-    }else{
-        printf("numero impar");
+    
+    while(i <= 5){
+        printf("%d\n", i);
+        i++;
     }
-
     return 0;
-}
+    }
