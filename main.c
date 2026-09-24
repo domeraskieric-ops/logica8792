@@ -6,12 +6,17 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int i = 10;
+    int numero;
 
-    
-    while(i <= 5){
-        printf("%d\n", i);
-        i++;
-    }
+    printf("Digite um número positivo:");
+    scanf("%d", &numero);
+
+        while(numero <= 0){
+            printf("Número inválido! Digite novamente:");
+            scanf("%d", &numero);
+        }
+        printf("Número válido: %d\n", numero);
+
+
     return 0;
     }
