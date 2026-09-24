@@ -6,15 +6,26 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-   int numero, soma = 0;
+//    int i = 1;
 
-   printf("Digite número para somar (0 encerra):");
-   scanf("%d", &numero);
+//         while(i <= 50){
+//             if(i % 2 == 0){
+//                 printf("%d\n", i); 
+//             }
+//             i++;
+//         }
 
-   while(numero != 0){
-    soma += numero;
-    scanf("%d", &numero);
-   }
-   printf("Soma total = %d\n", soma);
-    return 0;
+    for(int i = 0; i <= 50; i += 2){
+        printf("%d\n", i);
     }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
