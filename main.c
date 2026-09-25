@@ -1,27 +1,27 @@
 #include<stdio.h>
 #include<locale.h>
 #include<string.h>
-    int ehPrimo(int n){
-        if(n < 2)return 0;
-        for(int i = 2; i < n; i++){
-            if(n % i == 0) return 0;
-        }
-        return 1;
-    }
+   
 int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-   int numero;
-   
-   printf("Digite um número:");
-   scanf("%d", &numero);
+    int n, soma = 0;
+    printf("Digite um número:");
+    scanf("%d", &n);
 
-   if (ehPrimo(numero))
-   printf("%d é primo\n", numero);
-   else
-   printf("%d não é primo\n", numero);
-   
+    for(int i = 1; i < n; i++){
+        if(n % i == 0){
+            soma += i;
+        }
+    }
+    if(soma == n){
+        printf("%d é um número perfeito\n", n);
+    }else{
+        printf("%d Não é um número perfeito\n", n);
+    }
+
+    
     return 0;
 }
 
