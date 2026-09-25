@@ -6,16 +6,15 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int n;
-    long long fatorial = 1;
+    int n,s;
 
-    printf("Digite um número:");
-    scanf("%d", &n);
+    printf("digite um número:\n");
+    scanf("%d",&n);
 
-    for(int i = 1; i <= n; i++){
-        fatorial *= i;
+    for(int i = 1; i <= 10; i++){
+        s = i * n;
+        printf("\n%d x %d = %d", i,n,s);
     }
-    printf("fatorial: %lld\n", fatorial);
     return 0;
 }
 
