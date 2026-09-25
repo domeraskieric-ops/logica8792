@@ -6,17 +6,16 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int n, soma = 0;
-    
-    printf("Digite um número:\n");
+    int n;
+    long long fatorial = 1;
+
+    printf("Digite um número:");
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++){
-        soma += i;
+        fatorial *= i;
     }
-    printf("o resultado da soma é: %d\n", soma);
-
-
+    printf("fatorial: %lld\n", fatorial);
     return 0;
 }
 
