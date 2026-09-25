@@ -7,9 +7,15 @@ int main (){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
     int n,s;
+    int resultado;
 
     printf("digite um número:\n");
-    scanf("%d",&n);
+    resultado = scanf("%d",&n);
+
+    if(resultado != 1){
+        printf("entrada inválida! apenas numeros");
+        return 1;
+    }
 
     for(int i = 1; i <= 10; i++){
         s = i * n;
