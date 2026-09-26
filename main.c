@@ -6,18 +6,18 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int n, resto, invertido = 0;
+    int n;
+    float nota, soma = 0;
 
-    printf("Digite um número:");
+    printf("Quantos alunos tem a turma:");
     scanf("%d", &n);
-    
-    while(n != 0){
-        resto = n % 10;
-        invertido = invertido * 10 + resto;
-        n /= 10;
+    for(int i = 0; i < n; i++){
+        printf("Digite a nota do aluno %d: \n", i + 1);
+        scanf("%f", &nota);
+        soma += nota;
     }
 
-    printf("Número invertido: %d\n", invertido);
+    printf("Média da turma: %.2f\n", soma / n);
 
     return 0;
 }
