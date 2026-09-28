@@ -6,23 +6,29 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-//     for(int i = 1; i <= 10; i++){ 
-   
-//         for(int j = 1; j <= 10; j++){
+    int contador = 0;
 
+    for(int i = 0; i <= 9; i++){
 
-
-//     printf("\n%d x %d = %d", i,j,i * j);
-
-//    }
-//    printf("\n");
-// }
-
-    for(int i = 1; i < 7; i++){
-        for(int j = i; j < 7; j++){
-            printf("For externo e for interno: %d %d\n", i, j);
+        for(int j = 0; j <= 9; j++){
+        
+            for(int s = 0; s <= 9; s++){ 
+            
+                for(int n = 0; n <= 9; n++){ 
+                
+                contador++;
+             
+         printf("%d %d %d %d \n", i, j, s, n);
         }
+        printf("\n");
     }
+}
+    }
+    printf("Total de cod: %d\n", contador);
+
+
+
+    
 
     return 0;
 }
