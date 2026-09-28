@@ -6,21 +6,16 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int n = 1, s;
-
-    for(int i = 0; i <= 10; i++){ 
+    for(int i = 1; i <= 10; i++){ 
    
-        for(int i = 1; i <= 10; i++){
+        for(int j = 1; j <= 10; j++){
 
-    s = n * i;
 
-    printf("\n%d x %d = %d", n,i,s);
+
+    printf("\n%d x %d = %d", i,j,i * j);
 
    }
    printf("\n");
-
-   n = n + 1;
-   
 }
 
     return 0;
