@@ -12,10 +12,12 @@ int main (){
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++){
+        printf("\n");
         for(int j = 1; j <= n; j++){ 
         printf("*");
+        // \t  horizontal \n vertical
     }
-    printf("\n");
+    
 }
 
     
