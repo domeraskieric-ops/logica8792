@@ -6,22 +6,20 @@ int main (){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int limite;
+    int v[10];
 
-    printf("Digite o limite:");
-    scanf("%d", &limite);
-
-    for(int n = 1; n <= limite; n++){
-        int soma = 0;
-        for(int i = 1; i < n; i++){
-            if(n % i == 0){
-                soma += i;
-            }
-        }
-        if(soma == n & n != 0){
-            printf("%d é um número perfeito\n", n);
-        }
+    for(int i = 0; i < 10; i++){
+        printf("Digite o valor %d:", i + 1);
+        scanf("%d", &v[i]);
     }
+    printf("Vetor invertido: \n");
+
+    for(int i = 9; i >= 0; i--){
+        printf("%d", v[i]);
+    }
+
+    printf("\n");
+
     return 0;
 }
 
