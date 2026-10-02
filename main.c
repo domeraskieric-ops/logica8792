@@ -12,15 +12,18 @@ int main (){
     scanf("%d", &n);
 
     int v[n];
-    int soma = 0;
-
     for(int i = 0; i < n; i++){
         printf("Digite o valor %d:", i + 1);
-        scanf("%d", &v[1]);
-        soma += v[i];
+        scanf("%d", &v[i]);
     }
-    printf("Soma: %d\n", soma);
-    printf("Média: %.2f\n", (float)soma/n);
+    int maior = v[0], menor = v[0];
+    for(int i = 1; i < n; i++){
+        if(v[i] > maior)maior = v[i];
+        if(v[i] < menor)menor = v[i];
+    }
+    printf("Maior: %d\n", maior);
+    printf("Menor: %d\n", menor);
+    
     return 0;
 }
 
