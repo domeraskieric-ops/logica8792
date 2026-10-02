@@ -18,7 +18,7 @@ int main (){
     }
     int soma = 0;
     for(int i = 0; i < n; i++){
-        soma =+ v[i];
+        soma += v[i];
     }
     float media = (float)soma/n;
     printf("Soma: %d\n", soma);
