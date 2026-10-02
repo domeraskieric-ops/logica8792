@@ -12,18 +12,24 @@ int main (){
     scanf("%d", &n);
 
     int v[n];
-   int pares = 0, impares = 0;
+
+   
    for(int i = 0; i < n; i++){
     printf("Digite o valor %d:", i +1);
     scanf("%d", &v[i]);
-    if(v[i] % 2 == 0){
-        pares++;
-    }else{
-        impares++;
+    
+    if(v[i] < 0){
+        v[i] = 0;
     }
    }
-   printf("Pares: %d\n", pares);
-   printf("Impares: %d\n", impares);
+
+   printf("Vetor ajustado: \n");
+   
+   for(int i = 0; i < n; i++){
+    printf("%d", v[i]);
+   }
+   
+   printf("\n");
 
     return 0;
 }
