@@ -1,13 +1,19 @@
 #include<stdio.h>
 #include<locale.h>
 #include<string.h>
-#include "funcoes.h"
 
 int main(){    
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    printf("Resultado: %d\n", soma(2, 3));
+    int numero;
+
+    do{
+        printf("Digite um número maior que 0:");
+        scanf("%d", &numero);
+    }while(numero <= 0);
+
+    printf("Você digitou %d, que é válido!\n", numero);
 
     return 0;
 }
