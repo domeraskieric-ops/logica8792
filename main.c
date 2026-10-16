@@ -7,6 +7,7 @@
         char nome[50];
         int idade;
         float altura;
+        float peso;
     };
     
 
@@ -14,20 +15,28 @@ int main(){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    struct pessoal p1 = {"Eric", 24, 1.77};
-    struct pessoal p2 = {"Otavio", 4, 1.10};
-    struct pessoal p3 = {"João", 93, 1.66};
+    struct pessoal p1;
 
-    printf("Nome: %s | Idade: %d | Altura: %.2F\n", p1.nome, p1.idade, p1.altura);
+    printf("---- Bem-vindo a academia GYMtech ----");
+    printf("\n");
+    printf("Qual seu nome:");
+    scanf("%s", p1.nome);
     
-    printf("Nome: %s | Idade: %d | Altura: %.2F\n", p2.nome, p2.idade, p2.altura);
+    printf("Qual sua idade:");
+    scanf("%d", &p1.idade);
     
-    printf("Nome: %s | Idade: %d | Altura: %.2F\n", p3.nome, p3.idade, p3.altura);
+    printf("Qual sua altura:");
+    scanf("%f", &p1.altura);
     
-    
-    
-    
-    
+    printf("Qual seu peso:");
+    scanf("%f", &p1.peso);
+
+
+    printf("\n------------- Dados da Pessoa --------------\n");
+    printf("Nome: %s\n", p1.nome);
+    printf("Idade: %d\n", p1.idade);
+    printf("Altura: %.2f\n", p1.altura);
+    printf("Peso: %.2f\n", p1.peso);
     
     return 0;
   
