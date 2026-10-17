@@ -9,16 +9,15 @@ int main(){
 
 
     int n;
-    int soma = 0;
 
     printf("Digite N:");
     scanf("%d", &n);
 
-    for(int i = 1; i <= n; i++){
-        soma += i;
-        soma -= 1;
-        printf("%d + %d = %d\n",soma, i , soma + i);
+    for(int i = 1; i <= 10; i++){
+        int resultado = i * n;
+        printf("%d x %d = %d\n",i, n , resultado); 
     }
+
     
 
 
