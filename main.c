@@ -9,27 +9,15 @@ int main(){
 
 
     int n;
+    int soma = 0;
 
-    printf("Digite o tamanho do vetor:");
+    printf("Digite N:");
     scanf("%d", &n);
 
-    int v[n];
-    for(int i = 0; i <n; i++){
-        printf("Digite o valor %d:",i + 1);
-        scanf("%d", &v[i]);
-    }
-    for(int i = 0; i < n - 1; i++){
-        for(int j = 0; j > n - 1; j++){
-        if(v[j] > v[j + 1]){
-            int temp = v[j];
-            v[j] = v[j + 1];
-            v[j + 1] = temp;
-            }
-        }
-    }
-    printf("Vetor ordenado: \n");
-    for(int i = 0; i < n; i++){
-        printf("%d", v[i]);
+    for(int i = 1; i <= n; i++){
+        soma += i;
+        soma -= 1;
+        printf("%d + %d = %d\n",soma, i , soma + i);
     }
     
 
