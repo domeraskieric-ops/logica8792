@@ -11,9 +11,10 @@ int main(){
 
     printf("Digite um valor para n:");
     scanf("%d", &n);
+    //&= usado para ler a variavel n
 
     while(n >= 0){
-        printf("%d\n",n);
+        printf("%d\n",n); //não precisa & para ilustrção!
         n--;
     }
     
