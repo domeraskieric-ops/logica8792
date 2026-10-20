@@ -7,19 +7,19 @@ int main(){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    int n , pares = 0;
+    int senha = 1234;
+    int tentativa;
 
-    printf("Digite numeros (0 para parar)\n");
-    scanf("%d", &n);
+    printf("Digite a senha:");
+    scanf("%d", &tentativa);
 
-    while(n != 0){ 
-         if(n % 2 == 0){ 
-        pares++;
+    while(tentativa != senha){
+        printf("Senha incorreta! Tente Novamente!\n");
+        scanf("%d", &tentativa);
     }
-    printf("Digite um numero(0 para sair");
-    scanf("%d", &n);
-}
-    printf("Quantidade de pares: %d\n", pares);
+    printf("Acesso liberado!\n");
+
+
 
     return 0;
 }
