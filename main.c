@@ -7,21 +7,18 @@ int main(){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    int n;
+    int n , soma = 0;
 
-    printf("Digite um valor para n:");
+    printf("Digite numeros (0 para parar)\n");
     scanf("%d", &n);
-    //&= usado para ler a variavel n
 
-    while(n >= 0){
-        printf("%d\n",n); //não precisa & para ilustrção!
-        n--;
+    while(n != 0){ 
+       soma += n;
+       scanf("%d", &n);
     }
-    
+    printf("Soma dos Numeos digitados: %d",soma);
     return 0;
-  
-} 
-
+}
 
 
 
