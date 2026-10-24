@@ -9,50 +9,24 @@ int main(){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    const int dias = 7;
+    const int alunos = 5;
     
-    float temp[dias];
+    float notas[alunos];
     
-    float soma = 0, média;
+    float soma = 0;
 
-    float maior, menor;
 
-    int diaMaior = 1, diaMenor = 1;
-
-    int acimaMedia = 0;
-
-    for(int i = 0; i < dias; i ++){
-        printf("Temperatura do dia %d:", i + 1);
-        scanf("%f", &temp[i]);
-        soma += temp[i];
+    for(int i = 0; i < alunos; i ++){
+        printf("Nota do aluno %d:", i + 1);
+        scanf("%f", &notas[i]);
+        soma += notas[i];
     }
-    média = soma / dias;
-    maior = temp[0];
-    menor = temp[0];
-
-    for(int i = 0; i < dias; i++){
-        if(temp[i] > maior){
-            maior = temp[i];
-            diaMaior = i + 1;
-        }
-        if(temp[i] < menor){
-            menor = temp[i];
-            diaMenor = i + 1;
-        }
+    printf("\n------------ Notas --------------\n");
+    for(int i = 0; i < alunos; i++){
+        printf("Aluno %d: %.1f\n", i + 1, notas[i]);
     }
-    for(int i = 0; i < dias; i++){
-        if(temp[i] > média){
-            acimaMedia++;
-        }
-    }
-    printf("\n ----- Temperaturas -----");
-    for(int i = 0; i < dias; i++){
-        printf("Dia %d: %.1f\n", i + 1, temp[i]);
-    }
-    printf("\n Média da semana: %.1f\n", média);
-    printf("Maior: %1.f (dia %d)\n", maior, diaMaior);
-    printf("Menor: %.1f (dia %d)\n", menor, diaMenor);
-    printf("Dias acima da média: %d\n", acimaMedia);
+    printf("\nMédia da turma: %.1f\n", soma / alunos);
+        
 
     return 0;
 }
