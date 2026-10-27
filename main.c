@@ -8,8 +8,9 @@
 void exibirMatriz(int m[][2]){
     for(int i = 0; i < 2; i++){
         for(int j = 0; j < 2; j++){
-            printf("Números da Matriz:%d\n",m[i][j]);
+            printf("%d ",m[i][j]);
         }
+        printf("\n");
     }
 }
 
@@ -23,7 +24,7 @@ int main(){
         {3, 4},
      };
      exibirMatriz(m);
-     
+
     return 0;
 }
 
