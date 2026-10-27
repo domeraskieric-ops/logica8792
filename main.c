@@ -5,25 +5,20 @@
 #include<stdlib.h>
 #include<time.h>
 
-void exibirMatriz(int m[][2]){
-    for(int i = 0; i < 2; i++){
-        for(int j = 0; j < 2; j++){
-            printf("%d ",m[i][j]);
+void saudacao(char nome[]){
+    printf("Olá, %s\n", nome);
         }
-        printf("\n");
-    }
-}
+int soma(int a, int b){
+    return a + b;
+} 
 
 int main(){    
-
-    
+ 
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-     int m[2][2] = {
-        {1, 2},
-        {3, 4},
-     };
-     exibirMatriz(m);
+    saudacao("Eric");
+    int resultado = soma(5, 5);
+    printf("%d", resultado);
 
     return 0;
 }
