@@ -10,19 +10,16 @@ int main(){
     
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-     const int QTD = 5;
-    int numeros[QTD];
-    srand(time(NULL));
+     int m[2][2] = {
+        {1, 2},
+        {3, 4},
+     };
 
-    for(int i = 0; i < QTD; i++){
-        numeros[i] = rand() % 10 + 1;
+     for(int i = 0; i < 2; i++){
+     for(int j = 0; j < 2; j++){
+        printf("Números da Matriz:%d\n",m[i][j]);
+     }
     }
-    printf("Números sorteados:\n");
-
-    for(int i = 0; i < QTD; i++){
-        printf("%d\n", numeros[i]);
-    }
-
     return 0;
 }
 
