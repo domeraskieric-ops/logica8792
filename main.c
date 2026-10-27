@@ -5,20 +5,30 @@
 #include<stdlib.h>
 #include<time.h>
 
-void saudacao(char nome[]){
-    printf("Olá, %s\n", nome);
-        }
 int soma(int a, int b){
     return a + b;
-} 
+}
+
+void soma1(){
+    int x, y, resultado;
+    printf("Digite um valor para x:");
+    scanf("%d", &x);
+    
+    printf("Digite um valor para y:");
+    scanf("%d", &y);
+
+    resultado = x + y;
+    printf("\nA soma de %d + %d = %d", x, y, resultado);
+}
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    saudacao("Eric");
-    int resultado = soma(5, 5);
-    printf("%d", resultado);
+    
+    
+
+    soma1();
 
     return 0;
 }
