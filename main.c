@@ -5,6 +5,14 @@
 #include<stdlib.h>
 #include<time.h>
 
+void exibirMatriz(int m[][2]){
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            printf("Números da Matriz:%d\n",m[i][j]);
+        }
+    }
+}
+
 int main(){    
 
     
@@ -14,12 +22,8 @@ int main(){
         {1, 2},
         {3, 4},
      };
-
-     for(int i = 0; i < 2; i++){
-     for(int j = 0; j < 2; j++){
-        printf("Números da Matriz:%d\n",m[i][j]);
-     }
-    }
+     exibirMatriz(m);
+     
     return 0;
 }
 
