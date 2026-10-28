@@ -5,17 +5,15 @@
 #include<stdlib.h>
 #include<time.h>
 
-void linha(){
-    printf("-----------------------\n");
+void mostrarNumero(int numero){
+    printf("Número: %d\n", numero);
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    linha();
-    printf("Meu nome é Eric!\n");
-    linha();
+    mostrarNumero(40);
 
     return 0;
 }
