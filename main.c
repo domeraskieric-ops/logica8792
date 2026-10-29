@@ -5,16 +5,15 @@
 #include<stdlib.h>
 #include<time.h>
 
-int dobro(int numero){
-    return numero * 2;
+void monstrarNome(char nome[]){
+    printf("Nome: %s\n", nome);
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    int valor = 8;
-    printf("Dobro = %d\n", dobro(valor));
+    monstrarNome("Eric");
 
     return 0;
 }
