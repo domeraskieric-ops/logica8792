@@ -5,25 +5,21 @@
 #include<stdlib.h>
 #include<time.h>
 
-int quadrado(int numero){
-    return numero * numero;
+void linha(int n){
+    for(int i = 0; i < n; i++){
+        printf("-");
+        printf("\n");
+    }
 }
-
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-int n;
+    linha("30");
+    printf("BEM-VINDO AO SISTEMA\n");
+    linha("30");
 
- printf("Digite um número:");
- scanf("%d", &n);
-
-
-
- printf("O resultado é: %d", quadrado(n)); 
-
- 
 
     return 0;
 }
