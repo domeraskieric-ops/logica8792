@@ -5,21 +5,19 @@
 #include<stdlib.h>
 #include<time.h>
 
-void linha(int n){
-    for(int i = 0; i < n; i++){
-        printf("-");
-        printf("\n");
-    }
+#define PI 3.14159
+float area_circulo(float raio){
+    return PI * raio * raio;
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    linha("30");
-    printf("BEM-VINDO AO SISTEMA\n");
-    linha("30");
-
+    float r;
+    printf("Raio: ");
+    scanf("%f", &r);
+    printf("Área: %.2f/n", area_circulo(r));
 
     return 0;
 }
