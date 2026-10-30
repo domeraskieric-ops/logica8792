@@ -5,25 +5,23 @@
 #include<stdlib.h>
 #include<time.h>
 
-float media(float notas[], int n){
-    float soma = 0;
-    for(int i = 0; i < n; i++){
-        soma += notas[i];
-    }   
-        return soma /n;
-    
-}
+
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    float notas[5];
+    int vet[10];
 
-    for( int i = 0; i < 5; i++){
-        printf("Nota %d: ", i + 1);
-        scanf("%f", &notas[i]);
+    for(int i = 0; i < 10; i++){
+        printf("Valor %d: ", i + 1);
+        scanf("%d", &vet[i]);
     }
-    printf("Média: %.1f\n", media(notas, 5));
+    printf("\nVetor: ");
+    for(int i = 0; i < 10; i++){
+        printf("%d", vet[i]);
+        printf("\n");
+    }
+
     return 0;
 }
 
