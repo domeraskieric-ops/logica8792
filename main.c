@@ -5,18 +5,20 @@
 #include<stdlib.h>
 #include<time.h>
 
-int potencial(int base, int expoente){
-    if(expoente == 0){
-        return 1;
+void tabuada(int numero, int contador){
+    if(contador > 10){
+        return;
     }
-    return base * potencial(base, expoente - 1);
+    printf("%d x %d = %d\n", numero, contador, numero * contador);
+
+    tabuada(numero, contador + 1);
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    printf("Resultado: %d\n", potencial(2, 4));
+    tabuada(7 , 1);
 
     return 0;
 }
