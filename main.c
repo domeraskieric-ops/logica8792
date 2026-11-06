@@ -5,25 +5,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-int somar(int n){
-    if(n == 0){
-        return 0;
+int potencial(int base, int expoente){
+    if(expoente == 0){
+        return 1;
     }
-    return n + somar(n - 1);
-    // return 5 + somar(4);
-    // return 4 + soamr(3);
-    // sucessivamente
+    return base * potencial(base, expoente - 1);
 }
-
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
- 
-    int resultado = somar(5);
-    printf("Resultado: %d\n", resultado);
-   
-    
+
+    printf("Resultado: %d\n", potencial(2, 4));
 
     return 0;
 }
