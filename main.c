@@ -10,6 +10,9 @@ int somar(int n){
         return 0;
     }
     return n + somar(n - 1);
+    // return 5 + somar(4);
+    // return 4 + soamr(3);
+    // sucessivamente
 }
 
 
