@@ -5,20 +5,20 @@
 #include<stdlib.h>
 #include<time.h>
 
-void contagem(int n){
-    if(n == 0){
-        printf("Fogo!\n");
-        return;
+int fatorial(int numero){
+    if(numero == 0 || numero == 1){
+        return 1;
     }
-    printf("%d\n", n);
-    contagem(n - 1);
+    return numero * fatorial(numero - 1);
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
    
-    contagem(10);
+    int resultado = fatorial(5);
+    printf("Fatorial: %d\n", resultado);
+    
 
     return 0;
 }
