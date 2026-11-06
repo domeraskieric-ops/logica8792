@@ -18,7 +18,10 @@ int main(){
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    tabuada(7 , 1);
+    int numero;
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+    tabuada(numero, 1);
 
     return 0;
 }
