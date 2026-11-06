@@ -5,23 +5,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-void tabuada(int numero, int contador){
-    if(contador > 10){
-        return;
+int  contarDigitos(int numero){
+    if(numero < 10){
+        return 1;
     }
-    printf("%d x %d = %d\n", numero, contador, numero * contador);
-
-    tabuada(numero, contador + 1);
+    return 1 + contarDigitos(numero / 10);
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int numero;
-    printf("Digite um número: ");
-    scanf("%d", &numero);
-    tabuada(numero, 1);
+    printf("Quantidade: %d\n", contarDigitos(45872));
 
     return 0;
 }
