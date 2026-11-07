@@ -5,26 +5,28 @@
 #include<stdlib.h>
 #include<time.h>
 
-int fibonacci(int n){
-    if(n == 0){
-        return 0;
+    int palindromo(char palavra[], int inicio, int fim){
+        if(inicio >= fim){
+            return 1;
+        }
+        if(palavra[inicio] != palavra[fim]){
+            return 0;
+        }
+        return palindromo(palavra, inicio + 1, fim - 1);
     }
-    if(n == 1){
-        return 1;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int i;
+    char palavra[50] = "radar";
 
-    for(i = 0; i < 10; i++){
-        printf("%d ", fibonacci(i));
+    if(palindromo(palavra, 0, strlen(palavra) - 1)){
+        printf("É palindromo!\n");
+    }else{
+        printf("Não é palindromo!\n");
     }
-
+    
    
 
     return 0;
