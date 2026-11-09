@@ -5,19 +5,24 @@
 #include<stdlib.h>
 #include<time.h>
   
-long long fatorial(int n){
-    long long resultado = 1;
-    for(int i = 1; i <= n; i++ ){
-     resultado *= i;  
+int somaDigitos(int n){
+    int soma = 0;
+    while(n != 0){
+        soma += n % 10;
+         n /= 10;
     }
-    return resultado;
+    return soma;
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
+    int num;
+    printf("Digito um numero:");
+    scanf("%d", &num);
+
+    printf("Soma dos digitos é: %d\n", somaDigitos(num));
     
-    printf("S!=%11d\n", fatorial(5));
 
     return 0;
 }
