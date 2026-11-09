@@ -5,23 +5,19 @@
 #include<stdlib.h>
 #include<time.h>
   
-int soma(int n){
-    int total = 0;
-    for(int i = 1; i <= n; i++){
-        total += i;
+long long fatorial(int n){
+    long long resultado = 1;
+    for(int i = 1; i <= n; i++ ){
+     resultado *= i;  
+    }
+    return resultado;
 }
-    return total;
-}
-
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
-    int num;
-    printf("Numero para soma:");
-    scanf("%d", &num);
-
-    printf("soma de 1 ate: %d\n", soma(num));
+    
+    printf("S!=%11d\n", fatorial(5));
 
     return 0;
 }
