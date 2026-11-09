@@ -5,8 +5,11 @@
 #include<stdlib.h>
 #include<time.h>
   
-   float celsiusParaFahrenheit(float c){
-    return c * 9 / 5 + 32;
+   float celsiusParaFahrenheit(){
+    float celsius;
+    printf("Digite a temperatura em Celsius: ");
+    scanf("%f", &celsius);
+    return celsius * 9 / 5 + 32;
    }
    
 
@@ -14,15 +17,12 @@ int main(){
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    float celsius;
+    
     float fahrenheit;
 
-    printf("Digite a temperatura em celsius: ");
-    scanf("%f", &celsius);
+    fahrenheit = celsiusParaFahrenheit();
 
-    fahrenheit = celsiusParaFahrenheit(celsius);
-
-    printf("%.1f C = %1.f F\n", celsius, fahrenheit);
+    printf("Temperatura em fahreneit: %1.f F\n", fahrenheit);
     
     return 0;
 }
