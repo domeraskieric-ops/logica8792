@@ -5,17 +5,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-   void contar(int n){
-    for (int i = 0; i < n; i++){
-        printf("%d\n", i + 1);
+   void contagem(int n){
+    for (int i = n; i >= 1; i--){
+        printf("%d\n", i);
     }
+    printf("fogo!\n");
    }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    contar(5);
+    contagem(5);
     
     
    
