@@ -4,20 +4,26 @@
 #include<windows.h>
 #include<stdlib.h>
 #include<time.h>
-
-   float areaRetangulo(float base, float altura){
-        return base * altura;
+  
+   float celsiusParaFahrenheit(float c){
+    return c * 9 / 5 + 32;
    }
+   
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    printf("Área: %2f\n", areaRetangulo(5, 3.5));
-    
-    
-   
+    float celsius;
+    float fahrenheit;
 
+    printf("Digite a temperatura em celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = celsiusParaFahrenheit(celsius);
+
+    printf("%.1f C = %1.f F\n", celsius, fahrenheit);
+    
     return 0;
 }
 
