@@ -5,24 +5,27 @@
 #include<stdlib.h>
 #include<time.h>
   
-int somaDigitos(int n){
-    int soma = 0;
-    while(n != 0){
-        soma += n % 10;
-         n /= 10;
-    }
-    return soma;
+int quadrado(int n){
+    return n * n;
 }
+
+int cubo(int n){
+    return n * n * n;
+}
+
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
+
     int num;
-    printf("Digito um numero:");
+
+    printf("Digite um número para a multiplicação: ");
     scanf("%d", &num);
 
-    printf("Soma dos digitos é: %d\n", somaDigitos(num));
-    
+    printf("O resultado é: %d %d ", quadrado(num), cubo(num));
+
+
 
     return 0;
 }
