@@ -5,26 +5,23 @@
 #include<stdlib.h>
 #include<time.h>
   
-int quadrado(int n){
-    return n * n;
+int absoluto(int n){
+    if(n < 0){
+        return -n;
+    }
+    return n;
 }
-
-int cubo(int n){
-    return n * n * n;
-}
-
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int num;
+    printf("%d\n",absoluto(-8));
+    printf("%d\n",absoluto(4));
+    printf("%d\n",absoluto(0));
+    
 
-    printf("Digite um número para a multiplicação: ");
-    scanf("%d", &num);
-
-    printf("O resultado é: %d %d ", quadrado(num), cubo(num));
-
+   
 
 
     return 0;
