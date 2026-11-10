@@ -5,20 +5,27 @@
 #include<stdlib.h>
 #include<time.h>
   
-int absoluto(int n){
-    if(n < 0){
-        return -n;
+int maiorDeTres(int a, int b, int c){
+    int maior = a;
+
+    if(b > maior){
+        maior = b;
     }
-    return n;
+    if(c > maior){
+        maior = c;
+    }
+    return maior;
 }
 
 int main(){    
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
+    int num1, num2, num3;
 
-    printf("%d\n",absoluto(-8));
-    printf("%d\n",absoluto(4));
-    printf("%d\n",absoluto(0));
+    printf("digite tres numeros:");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    printf("Maior: %d\n",maiorDeTres(num1,num2,num3));
     
 
    
