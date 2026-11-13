@@ -11,12 +11,15 @@ int main(){
 
     int total = 0;
 
-    for (int i = 1; i <= 100; i++){
-    if( i % 4 == 0){
-        printf("%d\n",i);
-        i++;
+    for (int i = 100; i <= 999; i++){
+        int centena = i / 100;
+        int unidade = i % 10;
+         if(centena == unidade){
+             printf("%d\n", i);
+             total++;
+         }
     }
-    }
+     printf("Palindromo de 3 digitos: %d\n", total);
 
     return 0;
 }
