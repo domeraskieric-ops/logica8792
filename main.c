@@ -9,17 +9,22 @@ int main(){
  
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int total = 0;
-
-    for (int i = 100; i <= 999; i++){
-        int centena = i / 100;
-        int unidade = i % 10;
-         if(centena == unidade){
-             printf("%d\n", i);
-             total++;
-         }
+    char palavra[50];
+    int tamanho;
+    int palindromo;
+    printf("Digite uma palavra:");
+    scanf("%49s", palavra);
+    tamanho = strlen(palavra);
+    for(int i = 0; i < tamanho / 2; i++){
+        if(palavra[i] != palavra[tamanho - 1 - i]){
+            palindromo = 0;
+        }
     }
-     printf("Palindromo de 3 digitos: %d\n", total);
+    if(palindromo == 1){
+        printf("A palavra é um palindromo!\n");
+    }else{
+        printf("A palavra não é um palindromo!\n");
+    }
 
     return 0;
 }
